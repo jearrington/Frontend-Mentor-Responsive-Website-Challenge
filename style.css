@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    border-radius: 5%;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    justify-content: space-between;
+    box-shadow: 0px 10px 5px hsl(228, 57%, 86%);
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+
+h3, h5 {
+    font-weight: bold;
+}
+
+.bg_image {
+    background: url("./images/pattern-background-desktop.svg")
+    no-repeat center/cover;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Pricing */
+
+.plan {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+
+
+.change {
+    background-color: transparent;
+    border-color: transparent;
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+.change:hover {
+    color:  hsl(224, 23%, 55%);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.proceed {
+    background-color:  hsl(245, 75%, 52%);
+    color: #fff;
+    height: 30px;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    font-weight: bold;
+    border: hidden;
+    box-shadow: 0px 10px 5px hsl(225, 100%, 98%);
+}
+
+.proceed:hover {
+    background-color:   hsl(225, 100%, 94%);
+}
+
+.cancel {
+    margin-bottom: 15%;
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+    color: hsl(224, 23%, 55%);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        background: url("./images/pattern-mobile.svg")
+        cover;
+    }
+}
+
